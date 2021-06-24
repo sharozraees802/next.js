@@ -241,7 +241,7 @@ export class Head extends Component<
     crossOrigin: PropTypes.string,
   }
 
-  context!: React.ContextType<typeof DocumentComponentContext>
+  declare context: React.ContextType<typeof DocumentComponentContext>
 
   getCssLinks(files: DocumentFiles): JSX.Element[] | null {
     const {
@@ -764,7 +764,7 @@ export class NextScript extends Component<OriginProps> {
     crossOrigin: PropTypes.string,
   }
 
-  context!: React.ContextType<typeof DocumentComponentContext>
+  declare context: React.ContextType<typeof DocumentComponentContext>
 
   // Source: https://gist.github.com/samthor/64b114e4a4f539915a95b91ffd340acc
   static safariNomoduleFix =
